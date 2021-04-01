@@ -27,8 +27,10 @@ Plugin 'rstacruz/sparkup', {'rtp': 'vim/'}
 " Plugin 'ascenator/L9', {'name': 'newL9'}
 Plugin 'fatih/vim-go'
 Plugin 'junegunn/fzf'
+Plugin 'junegunn/fzf.vim'
 Plugin 'neoclide/coc.nvim'
 Plugin 'preservim/nerdtree'
+Plugin 'christoomey/vim-tmux-navigator'
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
 filetype plugin indent on    " required
@@ -52,7 +54,7 @@ syntax on " Enable syntax highlighting
 filetype indent on " Enable indenting for files
 set autoindent " Enable auto indenting
 set number " Enable line numbers
-colorscheme desert " Set nice looking colorscheme
+colorscheme torte " Set nice looking colorscheme
 set nobackup " Disable backup files
 set laststatus=2 "show status line
 set statusline=%F%m%r%h%w%=(%{&ff}/%Y)\ (line\ %l\/%L,\ col\ %c)\
