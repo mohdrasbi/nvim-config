@@ -46,6 +46,9 @@ filetype plugin indent on    " required
 " see :h vundle for more details or wiki for FAQ
 " Put your non-Plugin stuff after this line
 
+
+let g:coc_global_extensions=[ 'coc-omnisharp', 'coc-fzf-preview', 'coc-git', 'coc-go', 'coc-json', 'coc-prettier', 'coc-python', 'coc-sh', 'coc-sql', 'coc-toml', 'coc-yaml' ]
+
 set nocompatible " Use Vim settings, rather than Vi settings
 set softtabstop=2 " Indent by 2 spaces when hitting tab
 set shiftwidth=4 " Indent by 4 spaces when auto-indenting
