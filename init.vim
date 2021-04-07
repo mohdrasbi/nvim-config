@@ -252,3 +252,11 @@ nnoremap <silent><nowait> <space>j  :<C-u>CocNext<CR>
 nnoremap <silent><nowait> <space>k  :<C-u>CocPrev<CR>
 " Resume latest coc list.
 nnoremap <silent><nowait> <space>p  :<C-u>CocListResume<CR>
+
+" Mappings for fzf
+" Search files
+nnoremap <silent> <C-f> :Files<CR>
+" Search inside files
+nnoremap <silent> <Leader>f :Rg<CR>
+" Do not include file names when using :Rg 
+command! -bang -nargs=* Rg call fzf#vim#grep("rg --column --line-number --no-heading --color=always --smart-case ".shellescape(<q-args>), 1, {'options': '--delimiter : --nth 4..'}, <bang>0)
