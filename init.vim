@@ -31,6 +31,8 @@ Plugin 'neoclide/coc.nvim'
 Plugin 'preservim/nerdtree'
 Plugin 'christoomey/vim-tmux-navigator'
 Plugin 'tpope/vim-eunuch'
+Plugin 'fatih/vim-go'
+Plugin 'ayu-theme/ayu-vim'
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
 filetype plugin indent on    " required
@@ -57,7 +59,9 @@ syntax on " Enable syntax highlighting
 filetype indent on " Enable indenting for files
 set autoindent " Enable auto indenting
 set number " Enable line numbers
-colorscheme monokai " Set nice looking colorscheme
+set termguicolors
+let ayucolor="dark"
+colorscheme ayu " Set nice looking colorscheme
 set nobackup " Disable backup files
 set laststatus=2 "show status line
 set statusline=%F%m%r%h%w%=(%{&ff}/%Y)\ (line\ %l\/%L,\ col\ %c)\
