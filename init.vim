@@ -267,3 +267,6 @@ nnoremap <silent> <C-f> :Files<CR>
 nnoremap <silent> <Leader>f :Rg<CR>
 " Do not include file names when using :Rg 
 command! -bang -nargs=* Rg call fzf#vim#grep("rg --column --line-number --no-heading --color=always --smart-case ".shellescape(<q-args>), 1, {'options': '--delimiter : --nth 4..'}, <bang>0)
+
+" https://stackoverflow.com/a/676619/12271034
+vnoremap <C-r> "hy:%s/<C-r>h//gc<left><left><left>
