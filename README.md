@@ -1,2 +1,0 @@
-- Using vim with tmux: https://github.com/christoomey/vim-tmux-navigator
-- Ayu colorscheme: https://github.com/ayu-theme/ayu-vim
