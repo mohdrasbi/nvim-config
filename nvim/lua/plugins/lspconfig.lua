@@ -53,7 +53,7 @@ local on_attach = function(client, bufnr)
 
 end
 
-local servers = { 'pyright', 'gopls' }
+local servers = { 'pyright', 'gopls', 'eslint' }
 
 for _, lsp in ipairs(servers) do
   nvim_lsp[lsp].setup {
@@ -99,3 +99,4 @@ end
 
 vim.api.nvim_command("autocmd BufWritePre *.go lua goimports(1000)")
 vim.api.nvim_command("autocmd BufWritePre *.go lua vim.lsp.buf.formatting_sync(nil, 1000)")
+vim.api.nvim_command("autocmd BufWritePre <buffer> <cmd>EslintFixAll<CR>")
