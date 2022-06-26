@@ -2,6 +2,7 @@ require('settings')
 require('keymaps')
 
 require('plugins/packer')
+require('plugins/lspinstaller')
 require('plugins/lspconfig')
 require('plugins/nvim-tree')
 require('plugins/treesitter')

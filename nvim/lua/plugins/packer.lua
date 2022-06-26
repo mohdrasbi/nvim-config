@@ -6,6 +6,7 @@ return require('packer').startup(function()
   use 'tanvirtin/monokai.nvim'
 
   -- LSP
+  use "williamboman/nvim-lsp-installer"
   use 'neovim/nvim-lspconfig'
 
   -- Auto completion

@@ -84,3 +84,4 @@ function OrgImports(wait_ms)
 
 vim.api.nvim_command("autocmd BufWritePre *.go lua OrgImports(1000)")
 vim.api.nvim_command("autocmd BufWritePre *.go lua vim.lsp.buf.formatting_sync(nil, 1000)")
+vim.api.nvim_command("autocmd BufWritePre *.tsx,*.ts,*.jsx,*.js EslintFixAll")
