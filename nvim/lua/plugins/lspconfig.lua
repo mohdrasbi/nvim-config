@@ -53,7 +53,7 @@ local on_attach = function(client, bufnr)
 
 end
 
-local servers = { 'pyright', 'gopls', 'eslint' }
+local servers = { 'pyright', 'gopls', 'eslint', 'dartls', 'rust_analyzer' }
 
 for _, lsp in ipairs(servers) do
   nvim_lsp[lsp].setup {
