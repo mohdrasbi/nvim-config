@@ -21,3 +21,11 @@ map('n', 'ff', ':Telescope find_files<CR>', default_opts)
 map('n', 'fg', ':Telescope live_grep<CR>', default_opts)
 map('n', 'fb', ':Telescope buffers<CR>', default_opts)
 map('n', 'fh', ':Telescope help_tags<CR>', default_opts)
+
+-- Lua
+map("n", "<leader>xx", "<cmd>Trouble<cr>", default_opts)
+map("n", "<leader>xw", "<cmd>Trouble workspace_diagnostics<cr>", default_opts)
+map("n", "<leader>xd", "<cmd>Trouble document_diagnostics<cr>", default_opts)
+map("n", "<leader>xl", "<cmd>Trouble loclist<cr>", default_opts)
+map("n", "<leader>xq", "<cmd>Trouble quickfix<cr>", default_opts)
+map("n", "gR", "<cmd>Trouble lsp_references<cr>", default_opts)
